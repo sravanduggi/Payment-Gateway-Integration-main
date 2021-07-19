@@ -2,4 +2,6 @@
 
 Task #3 of The Sparks Foundation GRIP. The task is to create a Payment Gateway Integration website.
 
-for more information about my project u can see in below lin.
+for more information about my project u can see in below line.
+
+https://sravanduggi.github.io/Payment-Gateway-Integration-main/
