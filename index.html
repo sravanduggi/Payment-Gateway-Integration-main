@@ -1,0 +1,109 @@
+<!-- project : Payment-Gateway-Integration
+
+     Author : DUGGI SRAVAN
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sparks Foundations</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        </div>
+        <h2><a href="#" class="logo"><img src="handlog.png" width="45%" height="30%"></a></h2>
+        <div class="navigation">
+          <a href="#">HOME </a>
+          <a href="#">SERVICES</a>
+          <a href="#">INFO</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">DEVELOPERS</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content">
+        <div class="info">
+          <h2>Children without families are the most vunerable people in the word.</span></h2>
+          <p>Helps poverty-stricken villages to survive and care for the orphans. Ensures orphans that have no support are looked after, and provided for in terms of education, clothing, shelter, food and clean water.Make a difference to a child’s life, by giving them opportunities for education and providing for basic life essentials.
+
+You can donate an entire Orphan House or give any amount towards our general Orphan Fund, which goes towards one of our many Orphan programmes including housing, bedding, food, clothing, education and even funding their weddings when they grow up!.</p>
+          <a onclick="onButtonClick()" class="info-btn">DONATE</a><br><br>
+           <marquee><h3>Sravan Duggi</h3></marquee>
+
+        </div>
+        
+      </div>  
+        
+      <div class="media-icons">
+        
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100007771214245/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/srav____/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+     <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+        /* Start client-defined Callback Handler Functions */
+      function onOpenHandler () {
+        alert('Payments Modal is Opened');
+      }
+
+      function onCloseHandler () {
+        alert('Payments Modal is Closed');
+      }
+
+      function onPaymentSuccessHandler (response) {
+        alert('Payment Success');
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        alert('Payment Failure');
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onOpen: onOpenHandler,
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      function onButtonClick() {
+        Instamojo.open('https://test.instamojo.com/@sravanduggi12345/');
+      }0
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "&#10003; Liked";
+    }
+    </script>
+
+  </body>
+</html>
